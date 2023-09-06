@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000/api
+@authToken = eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYjJmZTYwNS01Njk0LTQ5NmEtYjAyOS0xMjE0OWRiN2UzNDciLCJpYXQiOjE2OTM5MTMwMDd9.RprMYa2L2C_nOF19nPXERsrstuIJLwQdtPazgnWA0puIbP1qzDYUwVDUMBXqTg2TqlYAc_WyFA8w_9im94JxtMHZxtFEClNmIVZ8nG-BPycKGdQuCjrRJD1yUOJaCHO8tOdUrcnm-xytcl49QY84J31FrYe2cRxYUuaSECnEl9fa-DMMwTJyLLzIcjwCYhpzDujiZFWCe0Vo3q02mAg6BpFvSGHpeqBXob-rOsHYjRtaKmo64AeUdfLYmSjvT7YKK5FPrtPB-4BjwYvFyyA6mOcBdB7oXkQ6Q_gdU7gmVrdTkm4qrvtkSLMxB7r7CjXS_BRDKf1jHOnjk3mqdHMXEQ
+
+
+# @name create_user
+POST {{baseUrl}}/create-user 
+Content-Type: application/json
+
+{
+  "name": "Bruno",
+  "email": "bruno@bruno.com.br",
+  "password": "123456Bu@",
+  "profile": 0,
+  "rePassword": "123456Bu@"
+}
+
+###
+
+
+# @name create_account
+POST {{baseUrl}}/login-user 
+Content-Type: application/json
+
+{
+    "email": "bruno@bruno.com.br",
+    "password": "123456Bu@"
+}
+
+###
+
+# @name fetch_recent_question
+GET {{baseUrl}}/questions?page=3
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+
