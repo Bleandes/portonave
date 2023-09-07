@@ -16,7 +16,7 @@ export function Sidebar() {
       icon: <UsersThree size={32} color="#fafafa" weight="thin" />,
       sub: [
         { subTitle: "Cadastrar", url: "cadastrar-usuario" },
-        { subTitle: "Consultar" },
+        { subTitle: "Consultar", url: "consultar-usuario"},
       ],
       //sub: ["Cadastrar", "Consultar"],
     },
@@ -24,7 +24,7 @@ export function Sidebar() {
       title: "Fornecedor",
       icon: <ShoppingCart size={32} color="#fafafa" weight="thin" />,
       sub: [
-        { subTitle: "Cadastrar", url: "cadastrar-usuario" },
+        { subTitle: "Cadastrar", url: "consultar-usuario" },
         { subTitle: "Consultar" },
       ],
       //sub: ["Cadastrar", "Consultar"],

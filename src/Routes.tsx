@@ -7,6 +7,7 @@ import {
 import { Layout } from "./Layout";
 import { Login } from "./Pages/Login";
 import { CadastrarUsuario } from "./Pages/Usuario/CadastrarUsuario";
+import { ConsultarUsuario } from "./Pages/Usuario/ConsultarUsuario";
 
 export interface RouteProps {
   path: string;
@@ -39,6 +40,7 @@ export function RoutesGlobal() {
           }
         >
           <Route path="cadastrar-usuario" element={<CadastrarUsuario />} />
+          <Route path="consultar-usuario" element={<ConsultarUsuario />} />
 
           {/* {routesDefinitions.map((value) => (
             <Route

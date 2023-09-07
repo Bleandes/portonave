@@ -6,6 +6,7 @@ export const Header = styled.div`
 display: flex;
 height: 10rem;
 width: calc(100vw - 18.125rem);
+margin-top: 2rem;
 `
 
 export const ContainerTitle = styled.div`
@@ -24,7 +25,7 @@ width: 50%;
 
 export const Title = styled.h2`
 font-size: 2.5rem;
-/* margin-left: 2rem; */
+margin-left: 5rem;
 color: #3d3d3d;
 `
 
@@ -35,6 +36,7 @@ background-color: #3d3d3d;
 border-radius: 100%;
 width: 4rem;
 height: 4rem;
+cursor: pointer;
 `
 
 

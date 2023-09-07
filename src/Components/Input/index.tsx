@@ -11,6 +11,8 @@ interface IInput {
   typeInput?: typeInput;
   nameCheckbox?: string[];
 
+  options?: string[];
+
   label?: string;
   marginTop?: number;
   password?: boolean;
@@ -36,7 +38,18 @@ export function Input(props: IInput) {
           </>
         )}
 
-        {props.typeInput == 1 && <></>}
+        {props.typeInput == 1 && (
+          <S.ContainerCheckboxPai>
+            <S.Text colorLabelDefault={props.colorLabelDefault}>
+              {props.label}
+            </S.Text>
+            <S.InputSelect name="selectedFruit">
+              {props.options?.map((item) => (
+                <S.InputOption key={item}>{item}</S.InputOption>
+              ))}
+            </S.InputSelect>
+          </S.ContainerCheckboxPai>
+        )}
 
         {props.typeInput == 2 && (
           <S.ContainerCheckboxPai>
